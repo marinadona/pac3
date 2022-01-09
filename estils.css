@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,400&display=swap');
+
+
+/* Reset de margins i paddings */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+  }
+
+body {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: rgb(244, 244, 244);
+}
+
+a{
+  color: rgb(189, 55, 0);
+  text-decoration: none;
+}
+
+a:hover{
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 400;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 2%;
+  font-size: 1.5rem;
+}
+
+h3 {
+  padding-bottom: 2%;
+}
+
+h4 {
+  font-variant: small-caps;
+  padding-top: 5%;
+}
+
+@media (min-width: 960px) {
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-top: 2%;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  body {
+    font-size: 1.2rem;
+  }
+}
+
+ul, li {
+  display: block;
+  padding-right: 2%;
+}
+
+@media (min-width: 960px) {
+  ul, li{
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+ol {
+  margin-left: 5%;
+}
+
+p{
+  margin-bottom: 5%;
+  line-height: normal;
+}
+
+.img-fluid {
+  max-width: 100%;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 2%;
+  padding-left:  2%;
+}
+
+@media (min-width: 960px) {
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right:18%;
+    padding-left: 18%;
+    }
+}
+
+/* Blocs principals del layout */
+
+header {
+  height: 40%;
+  background: white;
+  position: sticky;
+  top: 0px;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  text-align: center;
+}
+
+header a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+header a:hover{
+  color: rgba(0,0,0,0.5);
+  text-decoration: none;
+}
+
+header .menu-links {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+header ul.menu-links li.active a {
+  color: rgb(189, 55, 0);
+}
+
+.claim {
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.titular {
+  font-size:3rem;
+  font-weight: 800;
+}
+
+@media (min-width:960px) {
+  .claim {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 0.9rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right:18%;
+    padding-left: 18%;
+  }
+}
+
+@media (min-width:960px) {
+  .titular {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right:18%;
+    padding-left: 18%;
+  }
+}
+
+@media (min-width:960px) {
+  header .menu-links{
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right:18%;
+    padding-left: 18%;
+  }
+}
+
+footer {
+  background:rgb(0, 0, 0);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+footer a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+footer a:hover{
+  color: rgb(189, 55, 0);
+  text-decoration: none;
+}
+
+footer ul.social_networks a:hover{
+  opacity: 0.7;
+}
+
+@media (min-width: 960px){
+  footer {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 3;
+    display: flex;
+    justify-content: flex-start;
+    }
+}
+
+.wrapper_footer{
+  padding-top:1%;
+  padding-bottom: 2%;
+}
+
+@media (min-width: 960px){
+  .wrapper_footer{
+    padding: 0;
+  }
+  }
+
+
+/* Pàgina index */
+
+
+.to_be_continued {
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.to_be_continued a{
+       color: rgb(189, 55, 0);
+       border-bottom: dotted 1px;
+       text-decoration: none;
+       margin-bottom: 2%;
+     }
+
+.to_be_continued a:hover{
+       color: rgb(0, 0, 0);
+     }
+
+.section_01{
+       background: url(../img/bg-hero-home.jpg) 50% no-repeat;
+       height:300px;
+       padding: 2%;
+       }
+
+.section_01 h1{
+      color: rgb(255, 255, 255);
+      margin-right: auto;
+      margin-left: auto;
+      padding-right: 8%;
+      padding-left: 8%;
+      margin-top: 8%;
+      }
+
+@media (min-width: 960px) {
+      .section_01 h1{
+       margin-top: 2%;
+       margin-right: auto;
+       margin-left: auto;
+       padding-right:18%;
+       padding-left: 18%;
+     }
+   }
+
+.wrapper {
+     margin-bottom: 5%;
+     margin-left: 2%;
+     margin-right: 2%;
+     }
+
+@media screen and (min-width:960px) {
+      .wrapper {
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       column-gap: 5%;
+      }
+      }
+
+/* Pàgina índex -->part formulari*/
+
+form {
+    background-color: rgb(242, 232, 228);
+    }
+
+form a{
+    color: rgb(189, 55, 0);
+    text-decoration: none;
+    }
+
+form a:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    }
+
+@media (min-width:600px) {
+    form {
+    font-size: 0.7rem;
+    width: 100%;
+    margin: auto;
+    padding-top: 5px;
+    text-align: left;
+    }
+  }
+
+fieldset{
+    border: none;
+    text-align: center;
+    display: block;
+  }
+
+@media (min-width:600px) {
+    fieldset {
+      padding-left: 25%;
+      padding-right: 25%;
+    }
+  }
+
+input[type=text] {
+    width: 90%;
+    padding: 12px 20px;
+    margin-top: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+
+input[type=email] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+
+.politica_privacitat{
+    font-size: 0.6rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: left;
+}
+
+.boton {
+  background: rgb(189, 55, 0);
+  color: rgb(255, 255, 255);
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 4px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  cursor: pointer;
+  }
+
+
+  /* pàgina símptomes */
+
+
+  @media (min-width: 960px) {
+    .container_grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      }
+    }
+
+  .wrapper_image1, .wrapper_image2, .wrapper_image3, .wrapper_image4, .wrapper_image5{
+    display: block;
+    background-color: rgb(255,255,255);
+    padding: 2%;
+    margin-bottom: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 10px;
+
+  }
+
+@media (min-width:960px){
+  .wrapper_image1, .wrapper_image2, .wrapper_image3, .wrapper_image4, .wrapper_image5{
+      padding: 2%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      font-size: 1rem;
+    }
+}
+
+@media (min-width:960px){
+    .wrapper_image1{
+        grid-column: 1 / 3;
+        grid-row: 1;
+       }
+
+     .wrapper_image2{
+        grid-column: 2 / 4;
+        grid-row: 2;
+       }
+
+      .wrapper_image3{
+        grid-column: 1 / 3;
+        grid-row: 3;
+       }
+
+      .wrapper_image4{
+        grid-column: 2 / 4;
+        grid-row: 4;
+        }
+
+      .wrapper_image5{
+        grid-column: 1 / 3;
+        grid-row: 5;
+        }
+    }
+
+
+@media (min-width: 960px){
+    .box, .text {
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
+    .box img{
+      width: 100%;
+      height: 100%;
+      }
+    .box1 img, .box2 img, .box3 img, .box4 img, .box5 img{
+      object-fit: cover;
+    }
+  }
+
+  /*vídeos*/
+
+.wrapper_videos{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media screen and (min-width:960px) {
+  .wrapper_videos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 3%;
+    }
+  }
+
+figure {
+  margin: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.video_fluid{
+    display: table-caption;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(255,255,255);
+    font-family: "Raleway", sans-serif;
+    font-size: 0.7em;
+    padding-bottom: 5%;
+  }
+
+
+/*pàgina cop26*/
+
+
+@media screen and (min-width:600px) {
+      .wrapper_article{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 5%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      }
+}
+
+
+blockquote {
+    width: 95%;
+    max-width: 570px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    padding: 15px 30px;
+    background-color: rgb(255, 255, 255);
+    border-left: 4px solid rgb(189, 55, 0);
+}
+blockquote p {
+    font-style: italic;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+blockquote cite{
+    font-weight: 600;
+}
